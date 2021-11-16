@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>初识于香芋</title>
+    
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="./jscss/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./jscss/jquery.js"></script>
+    <script type="text/javascript" src="./jscss/garden.js"></script>
+    <script type="text/javascript" src="./jscss/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content" style="width: 1110px; height: 625px; margin-top: 52px; margin-left: 245px;">
+            <div id="code" style="margin-top: 112.5px;">
+                <span class="comments">/**</span><br>
+                <span class="space"><span class="comments">*因为我是一个呆呆的研发</span><br>
+                <span class="space"><span class="comments">*所以我用一种独有的方式来和你说说话.</span><br>
+                <span class="space"><span class="comments">*/</span><br>
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"醋醋"</span>);<br>
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"饼饼"</span>);<br>
+                <span class="comments">// 2021年11月16日，醋醋说：</span><br>
+                i.love(u);<br>
+                <span class="comments">// 但是......</span><br>
+                u.sayOtherthing();<br>
+                <span class="comments">// 你想要仪式感，但是醋醋傻乎乎不明白</span><br>
+                <span class="keyword">var</span> reason=i.ask(u);<br>
+                <span class="comments">// 其实醋醋已经准备好了 </span><br>
+                $("body").append(reason);<br>
+                <span class="comments">// 虽然我们认识时间还短</span><br>
+                <span class="comments">// 但是我想珍惜眼下每一刻，也想:</span><br>
+                i.takeCareOf(u);<br>
+                <span class="comments">// 如果，我是说如果</span><br>
+                <span class="keyword">boolean</span> isAccept = <span class="keyword">false</span>;<br>
+                <span class="keyword">while</span> (isAccept) {<br>
+                <span class="placeholder">i.waitFor(u);<br>
+                <span class="placeholder"><span class="comments">// 这是一个重要的决定</span><br>
+                <span class="placeholder"><span class="comments">// 顺利的话，我们早点儿结婚，不顺利的话我们晚点儿结婚。我的意思是：我们早晚要在一起</span><br>
+                <span class="placeholder">isAccept = u.thinkOver();<br>
+                }<br>
+                <span class="comments">// 因为在看到你的第一眼，就想到了两个字：要命</span><br>
+                u.accept(i);<br>
+                i.liveHappilyWith(u);<br>
+
+
+            </span></span></span></span></span></span></span>_</div>
+            <div id="loveHeart">
+                <canvas id="garden" width="670" height="625"></canvas>
+                <div id="words" style="position: absolute; top: 257px; left: 765px;">
+                    <div id="messages" style="display: block;">
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3712320065678109";
+/* lovead */
+google_ad_slot = "0650322805";
+google_ad_width = 320;
+google_ad_height = 50;
+//-->
+</script>
+</center>
+                        怀着激动的小心情
+                        <div id="elapseClock" style="display:none"></div>
+                        <a href="index3.html" id="accept">饼饼，还不点击一下这里？</a>
+                    </div>
+                    <div id="loveu" style="display: block;">
+                        我们慢慢来吧，我永远不想和你潦草收场<br>
+                        <div class="signature">- Love</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 10000);
+            
+            $("#accept").click(function(){
+                $(this).hide();
+                $("#elapseClock").show();
+                var together = new Date();
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+            })
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+	<audio src="20140413_025646.mp3" autoplay="autoplay"></audio>
+
+</body></html>
